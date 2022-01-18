@@ -101,3 +101,9 @@ sys.vendor.shutdown.waittime=500
 
 # System Restart
 ro.build.shutdown_timeout=2
+
+#Deep Sleep
+pm.sleep_mode=1
+
+#Disable sdm rotator downscaler
+vendor.display.disable_rotator_downscale=1
