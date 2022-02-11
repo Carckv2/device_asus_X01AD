@@ -33,7 +33,7 @@ debug.gralloc.enable_fb_ubwc=1
 debug.sf.recomputecrop=0
 video.accelerate.hw=1
 
-# surface flinger 
+# SurfaceFlinger
 ro.surface_flinger.protected_contents=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.set_touch_timer_ms=200
@@ -43,6 +43,10 @@ ro.surface_flinger.start_graphics_allocator_service=true
 ro.surface_flinger.running_without_sync_framework=true
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_virtual_display_dimension=4096
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
 
 # Zygote preforking
 persist.device_config.runtime_native.usap_pool_enabled=true
