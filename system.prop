@@ -250,6 +250,3 @@ persist.sys.binary_xml=false
 
 # DHA Tunning
 ro.config.dha_tunnable=1
-
-# App
-ro.launcher.blur.appLaunch=0
