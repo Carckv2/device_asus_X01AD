@@ -21,14 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from X01AD device
 $(call inherit-product, device/asus/X01AD/device.mk)
 
-# Inherit some common ArrowOS stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+# Inherit some common PixysOS stuff.
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 # Set shipping API level
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Device identifiers.
-PRODUCT_NAME := arrow_X01AD
+PRODUCT_NAME := pixys_X01AD
 PRODUCT_DEVICE := X01AD
 PRODUCT_MANUFACTURER := asus
 PRODUCT_BRAND := asus
@@ -46,4 +46,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := "asus/WW_X01AD/ASUS_X01A_1:10/WW_Phone-202005071625/17.2018.2004.31-20200507:user/release-keys"
 
 # ArrowOS additions
-DEVICE_MAINTAINER := Arka
+DEVICE_MAINTAINER := NINJA
+PIXYS_BUILD_TYPE := UNOFFICIAL
+IS_PHONE := true
+TARGET_SUPPORT_QUICK_TAP := true
